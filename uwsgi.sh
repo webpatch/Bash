@@ -3,7 +3,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
 apt-get install -y build-essential python-dev
-wget --no-check-certificate https://bootstrap.pypa.io/get-pip.py 
+wget -c --no-check-certificate https://bootstrap.pypa.io/get-pip.py 
 python get-pip.py
 pip install uwsgi
 
