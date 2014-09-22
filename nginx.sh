@@ -103,22 +103,8 @@ cd ../
 ln -s /usr/local/nginx/sbin/nginx /usr/bin/nginx
 
 cd $cur_dir
-rm -f /usr/local/nginx/conf/nginx.conf
-cp conf/nginx.conf /usr/local/nginx/conf/nginx.conf
-cp conf/dabr.conf /usr/local/nginx/conf/dabr.conf
-cp conf/discuz.conf /usr/local/nginx/conf/discuz.conf
-cp conf/sablog.conf /usr/local/nginx/conf/sablog.conf
-cp conf/typecho.conf /usr/local/nginx/conf/typecho.conf
-cp conf/wordpress.conf /usr/local/nginx/conf/wordpress.conf
-cp conf/discuzx.conf /usr/local/nginx/conf/discuzx.conf
-cp conf/none.conf /usr/local/nginx/conf/none.conf
-cp conf/wp2.conf /usr/local/nginx/conf/wp2.conf
-cp conf/phpwind.conf /usr/local/nginx/conf/phpwind.conf
-cp conf/shopex.conf /usr/local/nginx/conf/shopex.conf
-cp conf/dedecms.conf /usr/local/nginx/conf/dedecms.conf
-cp conf/drupal.conf /usr/local/nginx/conf/drupal.conf
-cp conf/ecshop.conf /usr/local/nginx/conf/ecshop.conf
-cp conf/pathinfo.conf /usr/local/nginx/conf/pathinfo.conf
+#rm -f /usr/local/nginx/conf/nginx.conf
+#cp conf/nginx.conf /usr/local/nginx/conf/nginx.conf
 }
 
 function AddAndStartup()
