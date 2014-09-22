@@ -4,8 +4,8 @@ export PATH
 
 cur_dir=$(pwd)
 
-apt-get update
-apt-get upgrade
+apt-get -f update
+apt-get -f upgrade
 
 
 groupadd www
@@ -21,7 +21,7 @@ cd $cur_dir
 chown -R www:www /home/wwwroot/default
 
 apt-get install -y libpcre3-dev build-essential libssl-dev
-wget http://nginx.org/download/nginx-1.6.2.tar.gz
+wget -c http://nginx.org/download/nginx-1.6.2.tar.gz
 tar -zxvf nginx-1.6.2.tar.gz
 cd nginx-1.6.2/
 ./configure --user=www --group=www --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module --with-http_gzip_static_module --with-ipv6
