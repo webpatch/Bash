@@ -8,7 +8,7 @@ python get-pip.py
 pip install uwsgi
 
 read -p "Install Python Component [Pillow & markdown & Flask] ?(y/n):" is_p
-if ["$is_p" = "y"];then
+if [ "$is_p" = "y" ]; then
   apt-get install -y libtiff4-dev libjpeg62-dev zlib1g-dev libfreetype6-dev libpng12-dev
   pip install pillow
   pip install markdown
