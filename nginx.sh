@@ -20,7 +20,7 @@ touch /home/wwwlogs/nginx_error.log
 cd $cur_dir
 chown -R www:www /home/wwwroot/default
 
-apt-get install libpcre3-dev build-essential libssl-dev
+apt-get install -y libpcre3-dev build-essential libssl-dev
 wget http://nginx.org/download/nginx-1.6.2.tar.gz
 tar -zxvf nginx-1.6.2.tar.gz
 cd nginx-1.6.2/
