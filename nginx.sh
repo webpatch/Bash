@@ -39,7 +39,6 @@ cd ../
 ln -s /usr/local/nginx/sbin/nginx /usr/bin/nginx
 ln -s /usr/local/nginx/conf /etc/nginx
 
-wget -c http://soft.vpser.net/lnmp/ext/init.d.nginx
 cp init.d.nginx /etc/init.d/nginx
 chmod +x /etc/init.d/nginx
 
