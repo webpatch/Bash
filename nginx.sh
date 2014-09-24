@@ -4,6 +4,14 @@ export PATH
 
 cur_dir=$(pwd)
 
+#set timezone
+rm -rf /etc/localtime
+ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+apt-get install -y ntpdate
+ntpdate -u pool.ntp.org
+date
+
 apt-get -f update
 apt-get -f upgrade
 
