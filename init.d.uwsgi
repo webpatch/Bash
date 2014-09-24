@@ -14,9 +14,6 @@
 # Description:       starts uwsgi using start-stop-daemon
 ### END INIT INFO
 
-# Author:   licess
-# website:  http://lnmp.org
-
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 USER=www
 NAME=uwsgi
