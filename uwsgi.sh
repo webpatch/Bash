@@ -6,6 +6,7 @@ apt-get install -y build-essential python-dev
 wget -c --no-check-certificate https://bootstrap.pypa.io/get-pip.py 
 python get-pip.py
 pip install uwsgi
+mkdir -p /etc/uwsgi
 
 read -p "Install Python Component [Pillow & markdown & Flask] ?(y/n):" is_p
 if [ "$is_p" = "y" ]; then
