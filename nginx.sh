@@ -25,6 +25,11 @@ mkdir -p /home/wwwlogs
 chmod 777 /home/wwwlogs
 touch /home/wwwlogs/nginx_error.log
 
+service apache2 stop
+apt-get purge -y apache2 apache2-utils apache2.2-bin apache2-common
+apt-get autoremove
+rm -rf /etc/apache2
+
 cd $cur_dir
 chown -R www:www /home/wwwroot/default
 
