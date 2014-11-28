@@ -14,6 +14,7 @@ chmod 777 /var/log/uwsgi.log
 
 cp init.d.uwsgi /etc/init.d/uwsgi
 chmod +x /etc/init.d/uwsgi
+update-rc.d -f uwsgi defaults
 
 read -p "Install Python Component [Pillow & markdown & Flask] ?(y/n):" is_p
 if [ "$is_p" = "y" ]; then
