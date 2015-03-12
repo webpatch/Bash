@@ -8,6 +8,8 @@ python get-pip.py
 pip install uwsgi
 
 mkdir -p /etc/uwsgi
+cp uwsgi_sample.ini /etc/uwsgi/uwsgi_sample.ini
+chmod 777 /etc/uwsgi/uwsgi_sample.ini
 
 touch /var/log/uwsgi.log
 chmod 777 /var/log/uwsgi.log
