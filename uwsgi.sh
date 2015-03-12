@@ -26,6 +26,8 @@ if [ "$is_p" = "y" ]; then
   pip install flask
 fi
 
+/etc/init.d/uwsgi start
+
 echo "===============Install uWSGI Success======================="
 echo "install path: /usr/local/bin/uwsgi"
 echo "config path: /etc/uwsgi"
