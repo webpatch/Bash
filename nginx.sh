@@ -34,9 +34,10 @@ cd $cur_dir
 chown -R www:www /home/wwwroot/default
 
 apt-get install -y libpcre3-dev build-essential libssl-dev
-wget -c http://nginx.org/download/nginx-1.6.2.tar.gz
-tar -zxvf nginx-1.6.2.tar.gz
-cd nginx-1.6.2/
+
+wget -c http://nginx.org/download/nginx-1.8.0.tar.gz
+tar -zxvf nginx-1.8.0.tar.gz
+cd nginx-1.8.0/
 ./configure --user=www --group=www --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module --with-http_gzip_static_module --with-ipv6
 make && make install
 cd ../
